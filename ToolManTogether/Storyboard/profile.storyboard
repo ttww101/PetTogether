@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0rM-g0-fWo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--個人資料-->
+        <scene sceneID="TXf-5V-v7P">
+            <objects>
+                <viewController id="ruf-4M-k0U" customClass="ProfileViewController" customModule="ToolManTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k2b-je-SdI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Pp-b6-Jl1">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Pp-b6-Jl1" firstAttribute="top" secondItem="9ri-qH-d2Z" secondAttribute="top" id="1hv-2W-9qI"/>
+                            <constraint firstItem="5Pp-b6-Jl1" firstAttribute="leading" secondItem="9ri-qH-d2Z" secondAttribute="leading" id="aOb-bj-ZUe"/>
+                            <constraint firstItem="9ri-qH-d2Z" firstAttribute="bottom" secondItem="5Pp-b6-Jl1" secondAttribute="bottom" id="cTf-lF-taO"/>
+                            <constraint firstItem="9ri-qH-d2Z" firstAttribute="trailing" secondItem="5Pp-b6-Jl1" secondAttribute="trailing" id="zMD-x0-QGv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9ri-qH-d2Z"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="個人資料" id="Mnk-6w-ETY">
+                        <barButtonItem key="rightBarButtonItem" title="更多" id="xNy-ZL-zxY">
+                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="logout:" destination="ruf-4M-k0U" id="cHH-ri-Bdh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileTableView" destination="5Pp-b6-Jl1" id="p8T-Ft-J5A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Yy-s6-rH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="168.6656671664168"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IRQ-Ju-efd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0rM-g0-fWo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pz0-Hr-zqO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ruf-4M-k0U" kind="relationship" relationship="rootViewController" id="TCp-Z0-vlP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLN-AL-8uB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88.799999999999997" y="168.6656671664168"/>
+        </scene>
+    </scenes>
+</document>

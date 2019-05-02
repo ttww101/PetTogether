@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Loading View Controller-->
+        <scene sceneID="Oq3-u6-TXY">
+            <objects>
+                <viewController storyboardIdentifier="loadingAlert" modalPresentationStyle="overFullScreen" id="dNp-Go-vyE" customClass="LoadingViewController" customModule="ToolManTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uWf-fy-hAx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ryu-Iz-fZf">
+                                <rect key="frame" x="112.5" y="258" width="150" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qt-Do-HG9">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="05R-mB-kzm"/>
+                                    <constraint firstItem="6qt-Do-HG9" firstAttribute="leading" secondItem="Ryu-Iz-fZf" secondAttribute="leading" id="CFy-3g-hKD"/>
+                                    <constraint firstAttribute="trailing" secondItem="6qt-Do-HG9" secondAttribute="trailing" id="HwD-Th-DtN"/>
+                                    <constraint firstAttribute="bottom" secondItem="6qt-Do-HG9" secondAttribute="bottom" id="Pr8-Te-bsy"/>
+                                    <constraint firstItem="6qt-Do-HG9" firstAttribute="top" secondItem="Ryu-Iz-fZf" secondAttribute="top" id="QFd-7z-4xH"/>
+                                    <constraint firstAttribute="height" constant="150" id="r4W-aE-rqx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ryu-Iz-fZf" firstAttribute="centerX" secondItem="uWf-fy-hAx" secondAttribute="centerX" id="maJ-DA-oYP"/>
+                            <constraint firstItem="Ryu-Iz-fZf" firstAttribute="centerY" secondItem="uWf-fy-hAx" secondAttribute="centerY" constant="-0.5" id="n8m-Ne-LEz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ht-XK-NPx"/>
+                    </view>
+                    <connections>
+                        <outlet property="aniView" destination="6qt-Do-HG9" id="6l4-G8-4eR"/>
+                        <outlet property="bgView" destination="Ryu-Iz-fZf" id="UHF-U0-ee4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lqt-RN-aup" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.59999999999999" y="164.16791604197903"/>
+        </scene>
+    </scenes>
+</document>

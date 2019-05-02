@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cpR-tj-jwW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--已接任務清單-->
+        <scene sceneID="E0n-ZP-Ack">
+            <objects>
+                <viewController id="aJ6-3c-Pmp" customClass="SearchTaskViewController" customModule="ToolManTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hL8-jk-Niz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="center" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="20" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apo-jo-COq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZk-Ee-S0m" userLabel="bgView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尚未成為工具人，前往首頁搜尋任務。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n84-ci-qLV">
+                                        <rect key="frame" x="10" y="429.5" width="355" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="HiL-5d-B3J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="82R-1P-g0s" userLabel="aniView">
+                                        <rect key="frame" x="97.5" y="211.5" width="180" height="180"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="1wD-vI-ekd"/>
+                                            <constraint firstAttribute="height" constant="180" id="fxY-uY-II9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="82R-1P-g0s" firstAttribute="centerY" secondItem="PZk-Ee-S0m" secondAttribute="centerY" id="6c0-NQ-vFL"/>
+                                    <constraint firstAttribute="trailing" secondItem="n84-ci-qLV" secondAttribute="trailing" constant="10" id="GaE-vP-Wxg"/>
+                                    <constraint firstAttribute="trailing" secondItem="82R-1P-g0s" secondAttribute="trailing" constant="97.5" id="Hda-Q6-29j"/>
+                                    <constraint firstItem="n84-ci-qLV" firstAttribute="top" secondItem="82R-1P-g0s" secondAttribute="bottom" constant="38" id="J7T-jK-oW4"/>
+                                    <constraint firstItem="82R-1P-g0s" firstAttribute="leading" secondItem="PZk-Ee-S0m" secondAttribute="leading" constant="97.5" id="hyu-fw-rdj"/>
+                                    <constraint firstItem="n84-ci-qLV" firstAttribute="leading" secondItem="PZk-Ee-S0m" secondAttribute="leading" constant="10" id="yYn-uG-ohW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PZk-Ee-S0m" firstAttribute="leading" secondItem="egE-oO-ASO" secondAttribute="leading" id="1nc-Lm-Hwr"/>
+                            <constraint firstItem="egE-oO-ASO" firstAttribute="bottom" secondItem="apo-jo-COq" secondAttribute="bottom" id="4XT-f6-vM7"/>
+                            <constraint firstItem="egE-oO-ASO" firstAttribute="bottom" secondItem="PZk-Ee-S0m" secondAttribute="bottom" id="JIG-oW-2Bw"/>
+                            <constraint firstItem="PZk-Ee-S0m" firstAttribute="trailing" secondItem="egE-oO-ASO" secondAttribute="trailing" id="Z6T-26-A7u"/>
+                            <constraint firstItem="apo-jo-COq" firstAttribute="leading" secondItem="egE-oO-ASO" secondAttribute="leading" id="bXH-xO-AFE"/>
+                            <constraint firstItem="egE-oO-ASO" firstAttribute="trailing" secondItem="apo-jo-COq" secondAttribute="trailing" id="gVK-zR-ttr"/>
+                            <constraint firstItem="apo-jo-COq" firstAttribute="top" secondItem="egE-oO-ASO" secondAttribute="top" id="qy2-yz-jn9"/>
+                            <constraint firstItem="PZk-Ee-S0m" firstAttribute="top" secondItem="egE-oO-ASO" secondAttribute="top" id="tFw-4U-T4v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="egE-oO-ASO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="已接任務清單" id="Z0s-R2-DFD">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="paper-plane" id="ZkF-Ae-C3M">
+                            <connections>
+                                <action selector="messageListTapped:" destination="aJ6-3c-Pmp" id="Ql5-qM-bOR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="aniView" destination="82R-1P-g0s" id="RLx-zf-lg0"/>
+                        <outlet property="bgLabel" destination="n84-ci-qLV" id="r1s-JV-jlx"/>
+                        <outlet property="bgView" destination="PZk-Ee-S0m" id="CVx-bt-cJD"/>
+                        <outlet property="searchTaskTableVIew" destination="apo-jo-COq" id="Dwd-CJ-YJr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Dc-Gf-p2M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="128.18590704647679"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PrG-MG-isC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cpR-tj-jwW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="U37-1R-e0Q">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.94901960780000005" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aJ6-3c-Pmp" kind="relationship" relationship="rootViewController" id="csx-X6-Vmo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UDV-cF-TuM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.799999999999997" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="paper-plane" width="32" height="32"/>
+    </resources>
+</document>

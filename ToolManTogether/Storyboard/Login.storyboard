@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YLK-6S-KuA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="a1p-6I-Dnv">
+            <objects>
+                <viewController storyboardIdentifier="LoginView" id="YLK-6S-KuA" customClass="LoginViewController" customModule="ToolManTogether" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RHL-hz-ujz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6TU-bX-8Xe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="Q2N-xF-F7Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcg-oR-bDF">
+                                        <rect key="frame" x="59" y="461.5" width="256" height="40"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.71764705880000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Plq-8E-nbh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-23"/>
+                                        <state key="normal" title="訪客">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="connectGuest:" destination="YLK-6S-KuA" eventType="touchUpInside" id="11z-we-Yix"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTE-Me-ngP">
+                                        <rect key="frame" x="59" y="396.5" width="256" height="40"/>
+                                        <color key="backgroundColor" red="0.94901960780000005" green="0.71764705880000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bQU-Ed-iGT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Facebook 登入">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="connectFB:" destination="YLK-6S-KuA" eventType="touchUpInside" id="WZM-NW-rwV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Gcg-oR-bDF" firstAttribute="top" secondItem="MTE-Me-ngP" secondAttribute="bottom" constant="25" id="0uW-SB-HGm"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q2N-xF-F7Y" secondAttribute="trailing" id="4HO-zb-Qvw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q2N-xF-F7Y" secondAttribute="bottom" id="5IS-Ib-KOs"/>
+                                    <constraint firstItem="Gcg-oR-bDF" firstAttribute="bottom" secondItem="6TU-bX-8Xe" secondAttribute="bottom" multiplier="0.75" constant="1" id="63p-sJ-bg1"/>
+                                    <constraint firstItem="Q2N-xF-F7Y" firstAttribute="leading" secondItem="6TU-bX-8Xe" secondAttribute="leading" id="B4M-WV-wt0"/>
+                                    <constraint firstItem="MTE-Me-ngP" firstAttribute="leading" secondItem="6TU-bX-8Xe" secondAttribute="leading" constant="59" id="NDz-sq-5x0"/>
+                                    <constraint firstItem="Q2N-xF-F7Y" firstAttribute="top" secondItem="6TU-bX-8Xe" secondAttribute="top" id="PyQ-db-rmv"/>
+                                    <constraint firstAttribute="trailing" secondItem="MTE-Me-ngP" secondAttribute="trailing" constant="60" id="V8u-Pf-EP0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Gcg-oR-bDF" secondAttribute="trailing" constant="60" id="agp-sM-amy"/>
+                                    <constraint firstItem="Gcg-oR-bDF" firstAttribute="leading" secondItem="6TU-bX-8Xe" secondAttribute="leading" constant="59" id="oRb-Tk-2jB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6TU-bX-8Xe" firstAttribute="top" secondItem="RHL-hz-ujz" secondAttribute="top" id="6Tf-H1-5aY"/>
+                            <constraint firstAttribute="bottom" secondItem="6TU-bX-8Xe" secondAttribute="bottom" id="e5i-4f-Ed3"/>
+                            <constraint firstItem="6TU-bX-8Xe" firstAttribute="leading" secondItem="RHL-hz-ujz" secondAttribute="leading" id="gL5-5D-U3w"/>
+                            <constraint firstAttribute="trailing" secondItem="6TU-bX-8Xe" secondAttribute="trailing" id="oOK-EJ-4y3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nIN-q4-ByM"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgView" destination="6TU-bX-8Xe" id="tcD-bh-737"/>
+                        <outlet property="fbButton" destination="MTE-Me-ngP" id="HPm-yI-rxa"/>
+                        <outlet property="guestButton" destination="Gcg-oR-bDF" id="utf-Kc-8MT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IZv-xE-2E5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149.59999999999999" y="-4.0479760119940034"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="login" width="2588" height="4600"/>
+    </resources>
+</document>
