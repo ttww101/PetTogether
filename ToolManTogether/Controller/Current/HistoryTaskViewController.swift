@@ -38,7 +38,7 @@ class HistoryTaskViewController: UIViewController {
     let keychain = KeychainSwift()
     var agreeAlready = false
     var badge = 1
-    let animationView = LOTAnimationView(name: "servishero_loading")
+    let animationView = AnimationView(name: "servishero_loading")
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -102,7 +102,8 @@ class HistoryTaskViewController: UIViewController {
         animationView.frame = aniView.frame
         animationView.center = aniView.center
         animationView.contentMode = .scaleAspectFit
-        animationView.loopAnimation = false
+//        animationView.loopAnimation = false
+        animationView.loopMode = .loop
         bgView.addSubview(animationView)
         animationView.play()
     }
@@ -409,7 +410,7 @@ extension HistoryTaskViewController: ScrollTask {
         self.toolsInfo.removeAll()
         self.historyTableView.reloadData()
         self.scrollViewDefine = cell
-        guard let userID = Auth.auth().currentUser?.uid else { return }
+        guard (Auth.auth().currentUser?.uid) != nil else { return }
         
         myRef.child("Task").queryOrderedByKey()
             .queryEqual(toValue: cell.taskKey)

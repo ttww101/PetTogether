@@ -33,7 +33,7 @@ class SearchTaskViewController: UIViewController {
     let keychain = KeychainSwift()
     var photoUrl: [URL] = []
     var userPhoto: [String:URL] = [:]
-    let animationView = LOTAnimationView(name: "servishero_loading")
+    let animationView = AnimationView(name: "servishero_loading")
     var selectTaskOwner: UserTask!
 
     override func viewWillAppear(_ animated: Bool) {
@@ -56,7 +56,7 @@ class SearchTaskViewController: UIViewController {
         self.searchTaskTableVIew.register(searchNib, forCellReuseIdentifier: "searchTask")
         searchTaskTableVIew.delegate = self
         searchTaskTableVIew.dataSource = self
-        myRef = Database.database().reference()
+//        myRef = Database.database().reference()
         selectTaskAdd()
         
         let notificationName = Notification.Name("sendRequest")
@@ -64,7 +64,7 @@ class SearchTaskViewController: UIViewController {
         
         UIApplication.shared.applicationIconBadgeNumber = 0
         
-        Database.database().callbackQueue = DispatchQueue(label: "spock_queue", qos: .userInitiated, attributes: [.concurrent])
+//        Database.database().callbackQueue = DispatchQueue(label: "spock_queue", qos: .userInitiated, attributes: [.concurrent])
 
     }
     
@@ -97,7 +97,8 @@ class SearchTaskViewController: UIViewController {
         animationView.frame = aniView.frame
         animationView.center = aniView.center
         animationView.contentMode = .scaleAspectFill
-        animationView.loopAnimation = false
+//        animationView.loopAnimation = false
+        animationView.loopMode = .loop
         bgView.addSubview(animationView)
         animationView.play()
     }
@@ -256,7 +257,7 @@ extension SearchTaskViewController: UITableViewDelegate, UITableViewDataSource {
             cell.searchTaskView.contentView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             
             let cellData = selectTask[indexPath.row].userTaskInfo
-            let distance = selectTask[indexPath.row].distance
+            _ = selectTask[indexPath.row].distance
             
             cell.selectionStyle = .none
             cell.searchTaskView.taskTitleLabel.text = cellData.title
@@ -285,7 +286,7 @@ extension SearchTaskViewController: UITableViewDelegate, UITableViewDataSource {
                 cell.searchTaskView.sendButton.isHidden = true
                 cell.searchTaskView.detailBtn.isHidden = false
                 
-                if let ownerID = cellData.ownerID {
+                if cellData.ownerID != nil {
                     cell.searchTaskView.detailBtn.addTarget(self, action: #selector(detailBtnTapped(data:)), for: .touchUpInside)
                 }
                 

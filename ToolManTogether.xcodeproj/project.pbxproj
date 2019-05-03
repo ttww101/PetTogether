@@ -104,7 +104,7 @@
 		8EEC3313215C924A00DE8C31 /* HistoryTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC3312215C924A00DE8C31 /* HistoryTaskViewController.swift */; };
 		8EEC3315215C928100DE8C31 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC3314215C928100DE8C31 /* profile.storyboard */; };
 		8EEC3317215CA24300DE8C31 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC3316215CA24300DE8C31 /* ProfileViewController.swift */; };
-		DCBDCF30227AF5F700DE5B16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCBDCF2F227AF5F700DE5B16 /* GoogleService-Info.plist */; };
+		DC170DCD227C2EB0003CA81C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC170DCC227C2EB0003CA81C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -208,7 +208,7 @@
 		8EEC3314215C928100DE8C31 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		8EEC3316215CA24300DE8C31 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AA9850B54DD82A117E99917C /* Pods-ToolManTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolManTogether.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolManTogether/Pods-ToolManTogether.release.xcconfig"; sourceTree = "<group>"; };
-		DCBDCF2F227AF5F700DE5B16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC170DCC227C2EB0003CA81C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E97E8B2878069B46EFA64257 /* Pods-ToolManTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolManTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToolManTogether/Pods-ToolManTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		ED94B28DC844466FD20D65F0 /* Pods_ToolManTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolManTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -303,7 +303,7 @@
 				8E5BB6E82151E88B0016C44A /* Assets.xcassets */,
 				8E5BB6EA2151E88B0016C44A /* LaunchScreen.storyboard */,
 				8E5BB6ED2151E88B0016C44A /* Info.plist */,
-				DCBDCF2F227AF5F700DE5B16 /* GoogleService-Info.plist */,
+				DC170DCC227C2EB0003CA81C /* GoogleService-Info.plist */,
 			);
 			path = ToolManTogether;
 			sourceTree = "<group>";
@@ -578,7 +578,6 @@
 				8E5BB6DA2151E8830016C44A /* Sources */,
 				8E5BB6DB2151E8830016C44A /* Frameworks */,
 				8E5BB6DC2151E8830016C44A /* Resources */,
-				8E6C6A6F21521CBC007259D3 /* ShellScript */,
 				8A65A78ACDE9DB2E603D04A4 /* [CP] Embed Pods Frameworks */,
 				8EB6A7512176DB52008C9CEF /* ShellScript */,
 			);
@@ -675,7 +674,7 @@
 				8ECAB99C215E177A00649128 /* RequestCollectionViewCell.xib in Resources */,
 				8E5BB6E92151E88B0016C44A /* Assets.xcassets in Resources */,
 				8E5BB6E72151E8830016C44A /* Main.storyboard in Resources */,
-				DCBDCF30227AF5F700DE5B16 /* GoogleService-Info.plist in Resources */,
+				DC170DCD227C2EB0003CA81C /* GoogleService-Info.plist in Resources */,
 				8EC92178215F146C00BEE92D /* RequestToolsTableViewCell.xib in Resources */,
 				8E58D77C2155369B008274F1 /* AddTaskTypeCell.xib in Resources */,
 				8EA01DAA21606C3500104A55 /* GoodCitizenCardCell.xib in Resources */,
@@ -731,19 +730,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ToolManTogether/Pods-ToolManTogether-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		8E6C6A6F21521CBC007259D3 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 		8EB6A7512176DB52008C9CEF /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;

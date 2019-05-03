@@ -52,17 +52,26 @@ class MessageController: UIViewController {
     }
 
     func resetBadgeCount() {
-        let myId = Auth.auth().currentUser?.uid
-        myRef.child("Badge").child(myId!).updateChildValues([
+        
+        guard let myId = Auth.auth().currentUser?.uid else {
+            /// FIXME: 新增 alert view
+            return
+        }
+        
+        myRef.child("Badge").child(myId).updateChildValues([
             "messageBadge": 1
             ])
     }
     
     func getUserAkkTaskKey() {
         
-        let userId = Auth.auth().currentUser?.uid
+        guard let userId = Auth.auth().currentUser?.uid else {
+            /// FIXME: 新增 alert view
+            return
+        }
+        
         myRef.child("userAllTask").queryOrderedByKey()
-            .queryEqual(toValue: userId!)
+            .queryEqual(toValue: userId)
             .observeSingleEvent(of: .value) { [weak self] (snapshot) in
                 
                 guard let data = snapshot.value as? NSDictionary else { return }
@@ -212,7 +221,7 @@ extension MessageController: UITableViewDelegate, UITableViewDataSource {
 
     }
     
-    func checkUserLeave(allData : [Message], cellData: Message) -> Bool {
+    func checkUserLeave(allData: [Message], cellData: Message) -> Bool {
         
         if cellData.text == "對方已關閉任務聊天室" || cellData.text == "對方已離開任務聊天室" || cellData.text == "已封鎖任務聊天室" {
                 return false

@@ -19,7 +19,7 @@ class LoadingViewController: UIViewController {
         super.viewDidLoad()
         self.view.isOpaque = false
         self.view.backgroundColor = .clear
-        let animationView = LOTAnimationView(name: "material_wave_loading")
+        let animationView = AnimationView(name: "material_wave_loading")
         animationView.frame = aniView.frame
         animationView.center = aniView.center
         animationView.contentMode = .scaleAspectFill

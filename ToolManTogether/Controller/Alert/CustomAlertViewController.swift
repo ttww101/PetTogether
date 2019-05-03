@@ -9,12 +9,14 @@
 import UIKit
 import Lottie
 
+
 class CustomAlertViewController: UIViewController {
     
     @IBOutlet weak var bgView: UIView!
     @IBOutlet weak var aniView: UIView!
     
-    let animationView = LOTAnimationView(name: "animation-done-new")
+
+    let animationView = AnimationView(name: "animation-done-new")
 
     override func viewDidLoad() {
         super.viewDidLoad()
