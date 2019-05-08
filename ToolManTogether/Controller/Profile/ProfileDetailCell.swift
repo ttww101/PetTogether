@@ -24,9 +24,6 @@ class ProfileDetailCell: UITableViewCell, UITextFieldDelegate, UITextViewDelegat
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var editBtn: UIButton!
     @IBOutlet weak var phoneTxtField: UITextField!
-    @IBOutlet weak var doneBtnHeight: NSLayoutConstraint!
-    @IBOutlet weak var cancelBtnHeight: NSLayoutConstraint!
-    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     
     var phone: String!
     var profile: String!

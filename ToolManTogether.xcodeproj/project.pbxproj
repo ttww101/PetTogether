@@ -105,6 +105,7 @@
 		8EEC3315215C928100DE8C31 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EEC3314215C928100DE8C31 /* profile.storyboard */; };
 		8EEC3317215CA24300DE8C31 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC3316215CA24300DE8C31 /* ProfileViewController.swift */; };
 		DC170DCD227C2EB0003CA81C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC170DCC227C2EB0003CA81C /* GoogleService-Info.plist */; };
+		DC170DD8227C58B8003CA81C /* ToDoList.md in Resources */ = {isa = PBXBuildFile; fileRef = DC170DD7227C58B8003CA81C /* ToDoList.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -209,6 +210,7 @@
 		8EEC3316215CA24300DE8C31 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		AA9850B54DD82A117E99917C /* Pods-ToolManTogether.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolManTogether.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToolManTogether/Pods-ToolManTogether.release.xcconfig"; sourceTree = "<group>"; };
 		DC170DCC227C2EB0003CA81C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DC170DD7227C58B8003CA81C /* ToDoList.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ToDoList.md; sourceTree = SOURCE_ROOT; };
 		E97E8B2878069B46EFA64257 /* Pods-ToolManTogether.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToolManTogether.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToolManTogether/Pods-ToolManTogether.debug.xcconfig"; sourceTree = "<group>"; };
 		ED94B28DC844466FD20D65F0 /* Pods_ToolManTogether.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToolManTogether.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -292,6 +294,7 @@
 		8E5BB6E02151E8830016C44A /* ToolManTogether */ = {
 			isa = PBXGroup;
 			children = (
+				DC170DD7227C58B8003CA81C /* ToDoList.md */,
 				8E93F76B216C60A30059BAEE /* ToolManTogether.entitlements */,
 				8E097DD421536D55006B574E /* View */,
 				8E6C6A7021522410007259D3 /* Model */,
@@ -678,6 +681,7 @@
 				8EC92178215F146C00BEE92D /* RequestToolsTableViewCell.xib in Resources */,
 				8E58D77C2155369B008274F1 /* AddTaskTypeCell.xib in Resources */,
 				8EA01DAA21606C3500104A55 /* GoodCitizenCardCell.xib in Resources */,
+				DC170DD8227C58B8003CA81C /* ToDoList.md in Resources */,
 				8EDA66312160B84D009FFB8D /* TaskAgree.storyboard in Resources */,
 				8E8BBD8321756E0200371ECB /* AgreeTask.storyboard in Resources */,
 				8E58D778215513DB008274F1 /* AddTaskContentCell.xib in Resources */,

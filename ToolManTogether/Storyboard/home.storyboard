@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CtY-rg-mlA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CtY-rg-mlA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--搜尋任務-->
+        <!--找尋狗友-->
         <scene sceneID="4aE-nf-hNh">
             <objects>
                 <viewController id="OCb-6x-2Uh" customClass="HomeViewController" customModule="ToolManTogether" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +72,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aqa-GX-Ewo"/>
                     </view>
-                    <navigationItem key="navigationItem" title="搜尋任務" id="Ui0-7c-puK"/>
+                    <navigationItem key="navigationItem" title="找尋狗友" id="Ui0-7c-puK"/>
                     <connections>
                         <outlet property="collectionViewConstraint" destination="qJs-rm-wdI" id="pkq-Jx-cf2"/>
                         <outlet property="locationButton" destination="nnQ-vJ-kcj" id="dgo-Xd-6k2"/>
@@ -110,6 +110,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gps-fixed-indicator" width="24" height="24"/>
+        <image name="gps-fixed-indicator" width="32" height="32"/>
     </resources>
 </document>

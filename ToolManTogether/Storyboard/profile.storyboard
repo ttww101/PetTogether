@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0rM-g0-fWo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0rM-g0-fWo">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--個人資料-->
+        <!--狗友資料-->
         <scene sceneID="TXf-5V-v7P">
             <objects>
                 <viewController id="ruf-4M-k0U" customClass="ProfileViewController" customModule="ToolManTogether" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,8 +32,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9ri-qH-d2Z"/>
                     </view>
-                    <navigationItem key="navigationItem" title="個人資料" id="Mnk-6w-ETY">
-                        <barButtonItem key="rightBarButtonItem" title="更多" id="xNy-ZL-zxY">
+                    <navigationItem key="navigationItem" title="狗友資料" id="Mnk-6w-ETY">
+                        <barButtonItem key="rightBarButtonItem" title="登出" id="xNy-ZL-zxY">
                             <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="logout:" destination="ruf-4M-k0U" id="cHH-ri-Bdh"/>
